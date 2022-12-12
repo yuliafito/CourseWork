@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #F8DE7E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gifts.controllers.DeleteSweet">
+   <children>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TableView fx:id="tableview" layoutX="21.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="654.0">
+         <columns>
+            <TableColumn fx:id="title" maxWidth="200.0" prefWidth="100.0" text="Title" />
+            <TableColumn fx:id="description" maxWidth="550.0" minWidth="20.0" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="sugarLevel" prefWidth="110.0" text="Sugar Level" />
+            <TableColumn fx:id="calorieContent" prefWidth="140.0" text="Calorie content" />
+            <TableColumn fx:id="price" prefWidth="100.0" text="Price" />
+         </columns>
+      </TableView>
+      <TextField fx:id="filterField" layoutX="104.0" layoutY="134.0" prefHeight="25.0" prefWidth="483.0" style="-fx-background-color: #E5E7E9;" />
+      <Label layoutX="21.0" layoutY="138.0" text="Search Box" />
+      <Pane layoutY="68.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="700.0" style="-fx-background-color: #F4BB44;">
+         <children>
+            <Label layoutX="17.0" layoutY="8.0" text="Enter name of sweet which you want to delete">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="deleteButton" layoutX="603.0" layoutY="134.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #E49B0F;" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="toMenuButton" layoutX="27.0" layoutY="373.0" mnemonicParsing="false" onAction="#menu" prefHeight="41.0" prefWidth="104.0" style="-fx-background-color: #E49B0F;" text="Back to menu">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fx:id="message" layoutX="149.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="306.5295104980469" />
+      <ImageView fitHeight="138.0" fitWidth="336.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Yulia%20Fitio/Downloads/46174527-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="399.0" layoutX="214.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Yulia%20Fitio/Downloads/46174527-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="167.0" fitWidth="329.0" layoutX="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Yulia%20Fitio/Downloads/46174527-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="555.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Yulia%20Fitio/Downloads/deer-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="248.0" layoutX="450.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Yulia%20Fitio/Downloads/box-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
